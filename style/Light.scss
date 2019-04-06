@@ -1,0 +1,33 @@
+// 300*108.7
+$width: 300px;
+$height: 108px;
+
+$red: 0px 100px $height 0px;
+$yellow: 0px 200px $height 100px;
+$green: 0px 300px $height 200px;
+
+.light-wrapper {
+    display: block;
+    position: relative;
+    width: $width;
+    height: $height;
+}
+
+.light {
+    display: block;
+    position: absolute;
+    width: $width;
+    height: $height;
+}
+
+.light-red {
+    clip:rect($red)
+}
+
+.light-yellow {
+    clip:rect($yellow)
+}
+
+.light-green {
+    clip:rect($green)
+}
